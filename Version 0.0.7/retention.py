@@ -10,10 +10,6 @@ contDeets = auto.Point(x=673, y=781)
 emailcoord = auto.Point(x=598, y=505)
 source = auto.Point(x=998, y=445)
 
-#"tab" - paste in comment title
-#"tab" - paste in call summary
-#end
-
 def open_record():
     #auto.click(fetchNext)
     #check if screen is ready
@@ -68,7 +64,11 @@ def email(user: str = "Nathaniel"):
     sleep(0.1)
     auto.press("right")#sender
     sleep(0.1)
-    auto.press('tab', presses=5, interval=0.15)
+    auto.press("tab")
+    sleep(0.1)
+    auto.press("right")#recipient
+    sleep(0.1)
+    auto.press('tab', presses=4, interval=0.15)
     sleep(0.1)
     clip.copy("Checking In—Let Us Know Your Plans for Next Semester")
     auto.hotkey("ctrl", "v") #subject
