@@ -2,6 +2,8 @@
 
 This is a "remote" that makes accessing the code I wrote for the various campaigns used in my office easily accessible for me and my coworker.
 
+To get it working, click the latest release and download the .exe file.
+
 LIMITATIONS:
 Due to the limitations of coding at work, the goal is to make the code functional and easily modifiable, rather than efficient. ie. accounting for edge cases, or shaving off milliseconds from the runtime.
 Additionally I do not have admin while at work, so all my code must be written using libraries that do not require administrator privileges. 
